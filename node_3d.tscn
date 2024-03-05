@@ -3,3 +3,7 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCylinder3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0516163, 0.613394, 0.197742)
+size = Vector3(0.694824, 0.313477, 0.593872)
