@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbdq1b2onngqr"]
+[gd_scene load_steps=4 format=3 uid="uid://cbdq1b2onngqr"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_3lv7v"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_0a6ba"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eewtp"]
 
 [node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_3lv7v")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_0a6ba")
