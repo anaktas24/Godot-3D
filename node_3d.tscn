@@ -1,9 +1,22 @@
-[gd_scene format=3 uid="uid://doeaoww4hgxpg"]
+[gd_scene load_steps=3 format=3 uid="uid://doeaoww4hgxpg"]
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="BoxMesh" id="BoxMesh_l07r7"]
+size = Vector3(10, 0.5, 10)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+[sub_resource type="BoxShape3D" id="BoxShape3D_8umuy"]
+size = Vector3(10, 0.5, 10)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGCylinder3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0516163, 0.613394, 0.197742)
-size = Vector3(0.694824, 0.313477, 0.593872)
+[node name="Level1" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.889321, 0.457284, 0, -0.457284, 0.889321, 0, 4.41331, 5.51592)
+
+[node name="Floor" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.278242, 0)
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("BoxMesh_l07r7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_8umuy")
