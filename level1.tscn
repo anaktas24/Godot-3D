@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://doeaoww4hgxpg"]
+[gd_scene load_steps=8 format=3 uid="uid://doeaoww4hgxpg"]
 
 [ext_resource type="PackedScene" uid="uid://dhlvfbdfbwxb6" path="res://block.tscn" id="1_edttu"]
 [ext_resource type="PackedScene" uid="uid://cbdq1b2onngqr" path="res://player.tscn" id="2_1m7eo"]
 [ext_resource type="Texture2D" uid="uid://cc7n6a31orv4d" path="res://icon.svg" id="3_tcjo3"]
 [ext_resource type="Script" path="res://Icon.gd" id="4_xnrw1"]
+[ext_resource type="PackedScene" uid="uid://b45vniaw68h4l" path="res://coin.tscn" id="5_b6ubc"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_l07r7"]
 size = Vector3(10, 0.5, 10)
@@ -51,3 +52,6 @@ transform = Transform3D(1, 0, 0, 0, 0.869348, 0.4942, 0, -0.4942, 0.869348, 0, 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0527, 3.30969)
 texture = ExtResource("3_tcjo3")
 script = ExtResource("4_xnrw1")
+
+[node name="Coin1" parent="." instance=ExtResource("5_b6ubc")]
+transform = Transform3D(0.00272801, -0.103694, -0.994605, -0.999654, -0.0262991, 0, -0.0261572, 0.994261, -0.10373, 1.90105, 2.03429, 4.83425)
