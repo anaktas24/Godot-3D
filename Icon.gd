@@ -12,4 +12,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	rotate_y(deg_to_rad(speed)
+	if Input.is_action_just_pressed("ui_left"):
+		rotate_y(deg_to_rad(speed))
+	elif Input.is_action_just_pressed("ui_right"):
+		rotate_y(deg_to_rad(speed))
