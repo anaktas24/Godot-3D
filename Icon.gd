@@ -1,5 +1,7 @@
 extends Sprite3D
 
+
+var coin1 =6
 var coins  =5 	
 var player_name = "robot"
 var hearts = 3.5
