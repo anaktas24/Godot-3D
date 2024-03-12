@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://doeaoww4hgxpg"]
+[gd_scene load_steps=12 format=3 uid="uid://doeaoww4hgxpg"]
 
 [ext_resource type="PackedScene" uid="uid://dhlvfbdfbwxb6" path="res://block.tscn" id="1_edttu"]
 [ext_resource type="PackedScene" uid="uid://cbdq1b2onngqr" path="res://player.tscn" id="2_1m7eo"]
@@ -16,6 +16,23 @@ size = Vector3(10, 0.5, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8umuy"]
 size = Vector3(10, 0.5, 10)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1gh3q"]
+sky_top_color = Color(0.0588235, 0.396078, 0.94902, 1)
+sky_horizon_color = Color(0.576471, 0.223529, 0, 1)
+sky_curve = 0.47075
+ground_bottom_color = Color(0.0588235, 0.188235, 0.270588, 1)
+sun_angle_max = 70.0
+
+[sub_resource type="Sky" id="Sky_7ewdb"]
+sky_material = SubResource("ProceduralSkyMaterial_1gh3q")
+radiance_size = 4
+
+[sub_resource type="Environment" id="Environment_tq827"]
+background_mode = 2
+background_energy_multiplier = 4.4
+sky = SubResource("Sky_7ewdb")
+sky_custom_fov = 22.5
 
 [node name="Level1" type="Node3D"]
 
@@ -63,3 +80,6 @@ transform = Transform3D(0.00272801, -0.103694, -0.994605, -0.999654, -0.0262991,
 
 [node name="Coin2" parent="." instance=ExtResource("5_b6ubc")]
 transform = Transform3D(0.00272801, -0.103694, -0.994605, -0.999654, -0.0262991, 0, -0.0261572, 0.994261, -0.10373, 1.90105, 2.03429, 4.83425)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_tq827")
