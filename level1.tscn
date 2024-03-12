@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://doeaoww4hgxpg"]
+[gd_scene load_steps=9 format=3 uid="uid://doeaoww4hgxpg"]
 
 [ext_resource type="PackedScene" uid="uid://dhlvfbdfbwxb6" path="res://block.tscn" id="1_edttu"]
 [ext_resource type="PackedScene" uid="uid://cbdq1b2onngqr" path="res://player.tscn" id="2_1m7eo"]
@@ -6,7 +6,12 @@
 [ext_resource type="Script" path="res://Icon.gd" id="4_xnrw1"]
 [ext_resource type="PackedScene" uid="uid://b45vniaw68h4l" path="res://coin.tscn" id="5_b6ubc"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dhjw"]
+albedo_color = Color(0.27451, 0.439216, 0.105882, 1)
+roughness = 0.73
+
 [sub_resource type="BoxMesh" id="BoxMesh_l07r7"]
+material = SubResource("StandardMaterial3D_2dhjw")
 size = Vector3(10, 0.5, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8umuy"]
