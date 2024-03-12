@@ -33,6 +33,7 @@ background_mode = 2
 background_energy_multiplier = 4.4
 sky = SubResource("Sky_7ewdb")
 sky_custom_fov = 22.5
+ambient_light_color = Color(1, 0.560784, 0.0235294, 1)
 
 [node name="Level1" type="Node3D"]
 
