@@ -85,6 +85,9 @@ script = ExtResource("4_xnrw1")
 [node name="Coin1" parent="." instance=ExtResource("5_b6ubc")]
 transform = Transform3D(0.00272801, -0.103694, -0.994605, -0.999654, -0.0262991, 0, -0.0261572, 0.994261, -0.10373, 1.90105, 2.03429, 3.34904)
 
+[node name="Coin1" parent="Coin1" instance=ExtResource("5_b6ubc")]
+transform = Transform3D(0.00272801, -0.103694, -0.994605, -0.999654, -0.0262991, 0, -0.0261572, 0.994261, -0.10373, 0.102027, 1.98696, 3.34904)
+
 [node name="Coin2" parent="." instance=ExtResource("5_b6ubc")]
 transform = Transform3D(0.00272801, -0.103694, -0.994605, -0.999654, -0.0262991, 0, -0.0261572, 0.994261, -0.10373, 1.90105, 2.03429, 4.83425)
 
