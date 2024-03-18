@@ -18,3 +18,9 @@ mesh = SubResource("BoxMesh_0a6ba")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_eewtp")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="CameraController" type="Node3D" parent="."]
+
+[node name="CameraTarget" type="Node3D" parent="CameraController"]
