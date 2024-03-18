@@ -37,9 +37,6 @@ ambient_light_color = Color(1, 0.560784, 0.0235294, 1)
 
 [node name="Level1" type="Node3D"]
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.866025, 0.249335, -0.433396, 0, 0.866792, 0.498669, 0.5, -0.43186, 0.750664, -7.0543, 5.3531, 6.27503)
-
 [node name="Floor" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.278242, 0)
 metadata/_edit_group_ = true
